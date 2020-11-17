@@ -4,11 +4,11 @@ using System.Numerics;
 
 namespace BBSGenerator
 {
-     public static class BlumBlumSnub
+     public static class BlumBlumShub
     {
         public static readonly BigInteger p = 300091;
         public static readonly BigInteger q = 400003;
-        public static readonly BigInteger N = p * q;
+        public static BigInteger N;
 
         //TWORZENIE KOLEJNEJ LICZBY BITOWEJ
         public static BigInteger nextBit(BigInteger previous)
@@ -26,14 +26,14 @@ namespace BBSGenerator
         }
 
         //TWORZENIE BITOWEGO CIAGU LOSOWEGO
-        public static void generatorBBS(BigInteger N)
+        public static void generatorBBS()
         {
             BigInteger seed = generateSeed(N);
             var sizeString = 20000;
 
             Console.WriteLine($"Dane:\nseed = {seed}\nsize = {sizeString}\np = {p}\nq = {q}\nN = {N}");
 
-            Console.WriteLine("BlumBlumSnub: ");
+            Console.WriteLine("BlumBlumShub: ");
             var bbsList = new List<int>();
             BigInteger xprev = seed;
             for (int i = 0; i < sizeString - 1; i++)

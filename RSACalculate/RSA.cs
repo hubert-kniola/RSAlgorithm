@@ -48,15 +48,13 @@ namespace RSACalculate
             var encryptList = RSACrypto.encryptMessage(plainText,e, n);
 
             Console.WriteLine("=== TESTS ===");
-            BlumBlumSnub.generatorBBS(phi);
+            BlumBlumShub.N = phi;
+            BlumBlumShub.generatorBBS();
 
             var decryptText = RSACrypto.decryptMessage(encryptList, d, n);
 
-            Console.WriteLine($" {plainText.Length} {decryptText.Length}");
             Console.WriteLine(plainText);
-
             RSACrypto.isSame(plainText, decryptText);
-
         }
     }
 }

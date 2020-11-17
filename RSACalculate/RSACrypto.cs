@@ -121,13 +121,14 @@ namespace RSACalculate
             var charList = new List<Char>();
 
             foreach (var element in encryptList)
-                decryptList.Add(BigInteger.Pow(element, (int)d) % n);
+                decryptList.Add(BigInteger.ModPow(element, (int)d, n));
 
             foreach (var element in decryptList)
                 Console.Write(element);
+            Console.WriteLine();
 
-            IEnumerable<List<BigInteger>> listOfInt = new List<List<BigInteger>>();
-            listOfInt = SplitList(decryptList, 2);
+            _ = new List<List<BigInteger>>();
+            IEnumerable<List<BigInteger>> listOfInt = SplitList(decryptList, 2);
 
             foreach (var element in listOfInt)
                 foreach (var e in element)

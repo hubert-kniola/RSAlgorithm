@@ -21,20 +21,23 @@ namespace BBSGenerator
         public static void SBTest(List<int> list)
         {
             Tests test = new Tests();
+            var x = Tests.countBits(list);
             if (list.Count == 0)
             {
                 Console.WriteLine("Nie utworzono ciagu bitowego!");
             }
+            else if (x > 9725 && x < 10275)
+            {
+                Console.WriteLine($"[Single Bit Test] Zakonczono sukcesem! [9725 < {x} < 10275]");
+            }
             else
             {
-                var x = Tests.countBits(list);
-                if (x > 9725 && x < 10275)
-                    Console.WriteLine($"[Single Bit Test] Zakonczono sukcesem! [9725 < {x} < 10275]");
+                Console.WriteLine("[Single Bit Test] Nie spelniono warunku testu!");
             }
         }
 
         //LONG SERIES TEST
-        public static void LSTest(List<int> list)
+        public static void LongSeriesTest(List<int> list)
         {
             int count0 = 0, count1 = 1;
             var countList0 = new List<int>();
@@ -73,19 +76,57 @@ namespace BBSGenerator
             foreach (var element in countList0)
                 if (element >= 26)
                 {
-                    Console.WriteLine($"Nie spelniono warunku testu {element} >= 26");
+                    Console.WriteLine($"[Long Series Test] Nie spelniono warunku testu {element} >= 26");
                     dex0 = true;
                     break;
                 }
             foreach (var element in countList1)
                 if (element >= 26)
                 {
-                    Console.WriteLine($"Nie spelniono warunku testu {element} >= 26");
+                    Console.WriteLine($"[Long Series Test] Nie spelniono warunku testu {element} >= 26");
                     dex1 = true;
                     break;
                 }
             if (dex0 == false || dex1 == false)
                 Console.WriteLine("[Long Series Test] Zakonczono sukcesem!");
+        }
+
+        public static void LSTest(List<int> input)
+        {
+            int count = 0;
+            int biggestSeries = 0;
+
+            bool isOne;
+            if (input[0] == 0)
+                isOne = false;
+            else
+                isOne = true;
+            for (int i = 0; i < input.Count; i++)
+            {
+                if (isOne == true && input[i] == 1)
+                    count++;
+                else if (isOne == true && input[i] == 0)
+                {
+                    if (count > biggestSeries)
+                        biggestSeries = count;
+                    isOne = false;
+                    count = 0;
+                }
+                else if (isOne == false && input[i] == 1)
+                {
+                    if (count > biggestSeries)
+                        biggestSeries = count;
+                    isOne = true;
+                    count = 0;
+                }
+                else if (isOne == false && input[i] == 0)
+                    count++;
+            }
+
+            if (biggestSeries < 26)
+                Console.WriteLine("[Long Series Test] Zakonczono sukcesem!");
+            else
+                Console.WriteLine($"[Long Series Test] Nie spelniono warunku testu!");
         }
 
         //SERIES TEST
@@ -150,7 +191,7 @@ namespace BBSGenerator
                 count6 >= 103 && count6 <= 209)
                 Console.WriteLine($"[Series Test] Zakonczono sukcesem!");
             else
-                Console.WriteLine("Nie spelniono warunku testu!");
+                Console.WriteLine("[Series Test] Nie spelniono warunku testu!");
 
         }
 
@@ -228,7 +269,7 @@ namespace BBSGenerator
             if (result > 2.16 && result < 46.17)
                 Console.WriteLine($"[Poker Test] Zakonczono sukcesem! [2,16 < {result} < 46,17]");
             else
-                Console.WriteLine($"Nie spelniono wymagan testu! [ {result} ]");
+                Console.WriteLine($"[Poker Test] ]Nie spelniono wymagan testu! [ {result} ]");
         }
     }
 }
