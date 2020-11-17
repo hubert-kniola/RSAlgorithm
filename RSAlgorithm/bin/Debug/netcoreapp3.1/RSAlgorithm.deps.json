@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RSAlgorithm/1.0.0": {
+        "dependencies": {
+          "BBSGenerator": "1.0.0",
+          "RSACalculate": "1.0.0"
+        },
+        "runtime": {
+          "RSAlgorithm.dll": {}
+        }
+      },
+      "BBSGenerator/1.0.0": {
+        "runtime": {
+          "BBSGenerator.dll": {}
+        }
+      },
+      "RSACalculate/1.0.0": {
+        "dependencies": {
+          "BBSGenerator": "1.0.0"
+        },
+        "runtime": {
+          "RSACalculate.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RSAlgorithm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BBSGenerator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RSACalculate/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

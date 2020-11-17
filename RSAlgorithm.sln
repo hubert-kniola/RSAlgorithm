@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSAlgorithm", "RSAlgorithm\RSAlgorithm.csproj", "{F31FF07E-FFEE-4980-AB97-44622C367008}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSAlgorithm", "RSAlgorithm\RSAlgorithm.csproj", "{F31FF07E-FFEE-4980-AB97-44622C367008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSACalculate", "RSACalculate\RSACalculate.csproj", "{6884203B-D6B3-48A6-A453-350FD5D54CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RSACalculate", "RSACalculate\RSACalculate.csproj", "{6884203B-D6B3-48A6-A453-350FD5D54CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBSGenerator", "BBSGenerator\BBSGenerator.csproj", "{6CEDBC4B-C7A8-4087-9996-B8B608E7C67F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6884203B-D6B3-48A6-A453-350FD5D54CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6884203B-D6B3-48A6-A453-350FD5D54CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6884203B-D6B3-48A6-A453-350FD5D54CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEDBC4B-C7A8-4087-9996-B8B608E7C67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEDBC4B-C7A8-4087-9996-B8B608E7C67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEDBC4B-C7A8-4087-9996-B8B608E7C67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEDBC4B-C7A8-4087-9996-B8B608E7C67F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

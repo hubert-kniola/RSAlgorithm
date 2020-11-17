@@ -1,0 +1,12 @@
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\RSACalculate.deps.json
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\RSACalculate.dll
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\RSACalculate.pdb
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csprojAssemblyReference.cache
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.AssemblyInfoInputs.cache
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.AssemblyInfo.cs
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csproj.CoreCompileInputs.cache
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.dll
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.pdb
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\BBSGenerator.dll
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\BBSGenerator.pdb
+C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csproj.CopyComplete

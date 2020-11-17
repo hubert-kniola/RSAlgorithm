@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BBSGenerator\BBSGenerator.csproj" />
+    <ProjectReference Include="..\RSACalculate\RSACalculate.csproj" />
+  </ItemGroup>
+
 </Project>

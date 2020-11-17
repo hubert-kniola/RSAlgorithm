@@ -1,4 +1,5 @@
 ﻿using System;
+using RSACalculate;
 
 namespace RSAlgorithm
 {
@@ -6,7 +7,7 @@ namespace RSAlgorithm
     {
         static void Main(string[] args)
         {
-
+            RSA.RSAalgorithm();
 
             Console.ReadKey();
         }
