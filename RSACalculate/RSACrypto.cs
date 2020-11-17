@@ -8,12 +8,25 @@ namespace RSACalculate
 {
     class RSACrypto
     {
-        public static IEnumerable<List<T>> SplitList<T>(List<T> locations, int nSize)
+
+        /// <summary>
+        /// Metoda odpowiedzialna za dzielenie listy na podgrupy
+        /// </summary>
+        /// <typeparam name="T">Zmienna typu T</typeparam>
+        /// <param name="locations">Lista zmiennych</param>
+        /// <param name="nSize">Rozmiar grup</param>
+        /// <returns></returns>
+        private static IEnumerable<List<T>> SplitList<T>(List<T> locations, int nSize)
         {
             for (int i = 0; i < locations.Count; i += nSize)
                 yield return locations.GetRange(i, Math.Min(nSize, locations.Count - i));
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za generowanie ciągu znaków o podanej długości
+        /// </summary>
+        /// <param name="length">Wymagana długość ciągu</param>
+        /// <returns></returns>
         public static string generateMessage(int length)
         {
             StringBuilder str_build = new StringBuilder();
@@ -30,20 +43,38 @@ namespace RSACalculate
             return str_build.ToString();
         }
 
-        public static IEnumerable<string> Split(string str, int chunkSize)
+        /// <summary>
+        /// Metoda odpowiedzialna za dzielenie ciągu znaków na mniejsze grupki
+        /// </summary>
+        /// <param name="str">Ciąg znaków</param>
+        /// <param name="chunkSize">Rozmiar grup</param>
+        /// <returns></returns>
+        private static IEnumerable<string> Split(string str, int chunkSize)
         {
             return Enumerable.Range(0, str.Length / chunkSize)
                 .Select(i => str.Substring(i * chunkSize, chunkSize));
         }
 
+        /// <summary>
+        /// Metoda sprawdzająca czy stringi są identyczne
+        /// </summary>
+        /// <param name="msg">Tekst zwykły</param>
+        /// <param name="result">Tekst odszyfrowany</param>
         public static void isSame(string msg, string result)
         {
-            if (Equals(msg, result))
+            if (msg.Equals(result))
                 Console.WriteLine("The decrypted text is identical to plain text");
             else
                 Console.WriteLine("Something is wrong! Decrypted textand plain text are not equal");
         }
 
+        /// <summary>
+        /// Metoda za szyfrowanie podanego ciągu znaków
+        /// </summary>
+        /// <param name="msg">Tekst zwykły</param>
+        /// <param name="e">Wartość zmiennej e</param>
+        /// <param name="n">Wartość zmiennej n</param>
+        /// <returns></returns>
         public static List<BigInteger> encryptMessage(string msg, BigInteger e, BigInteger n)
         {
             Console.WriteLine("=== ENCRYPTION ===");
@@ -75,13 +106,14 @@ namespace RSACalculate
             return encryptList;
         }
 
-        private static List<int> stringToAscii(string value)
-        {
-            if (string.IsNullOrEmpty(value))
-                throw new ArgumentException("Value cannot be null or empty.", nameof(value));
-            return value.Select(System.Convert.ToInt32).ToList();
-        }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za deszyfrowanie podanego ciągu
+        /// </summary>
+        /// <param name="encryptList">Zaszyfrowania wiadomość</param>
+        /// <param name="d">Wartość zmiennej d</param>
+        /// <param name="n">Wartość zmiennej n</param>
+        /// <returns></returns>
         public static string decryptMessage(List<BigInteger> encryptList, BigInteger d, BigInteger n)
         {
             Console.WriteLine("=== DECRYPTION ===");
@@ -94,22 +126,26 @@ namespace RSACalculate
             foreach (var element in decryptList)
                 Console.Write(element);
 
-            IEnumerable<BigInteger> listOfInt = new List<BigInteger>();
-            listOfInt = (IEnumerable<BigInteger>)SplitList(decryptList, 2);
+            IEnumerable<List<BigInteger>> listOfInt = new List<List<BigInteger>>();
+            listOfInt = SplitList(decryptList, 2);
 
             foreach (var element in listOfInt)
-                Console.WriteLine(element);
+                foreach (var e in element)
+                    Console.WriteLine(e);
 
             foreach (var element in listOfInt)
             {
-                char e = (char)element;
-                Console.Write(e);
-                charList.Add(e);
+                foreach (var e in element)
+                {
+                    char r = (char)e;
+                    Console.Write(r);
+                    charList.Add(r);
+                }
             }
             Console.Write($" | Length: {charList.Count}");
             Console.WriteLine();
 
-            return charList.ToString();
+            return new string(charList.ToArray());
         }
     }
 }

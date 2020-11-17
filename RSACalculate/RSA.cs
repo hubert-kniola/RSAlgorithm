@@ -11,11 +11,12 @@ namespace RSACalculate
     {
         public static void RSAalgorithm()
         {
-            var plainText = RSACrypto.generateMessage(50);
-            Stopwatch sw = Stopwatch.StartNew();
+            #region Generating
+            var plainText = RSACrypto.generateMessage(50);  
             Console.WriteLine($"PlainText: {plainText} | Length: {plainText.Length}");
 
-            #region Generating
+            Stopwatch sw = Stopwatch.StartNew();
+
             sw.Start();
             var p = RSACalculations.randomInteger();
             Thread.Sleep(100);
@@ -49,7 +50,12 @@ namespace RSACalculate
             Console.WriteLine("=== TESTS ===");
             BlumBlumSnub.generatorBBS(phi);
 
-            var decryptList = RSACrypto.decryptMessage(encryptList, d, n);
+            var decryptText = RSACrypto.decryptMessage(encryptList, d, n);
+
+            Console.WriteLine($" {plainText.Length} {decryptText.Length}");
+            Console.WriteLine(plainText);
+
+            RSACrypto.isSame(plainText, decryptText);
 
         }
     }

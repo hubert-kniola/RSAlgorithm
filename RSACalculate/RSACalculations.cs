@@ -9,22 +9,37 @@ namespace RSACalculate
     {
         private static Random _rnx;
 
+        /// <summary>
+        /// Metoda odpowiedzialna za generowanie losowej liczby pierwszej z podanego zakresu
+        /// </summary>
+        /// <returns></returns>
         public static BigInteger randomInteger()
         {
             BigInteger x = 0;
             do
             {
-                x = randomNumber(100, 10000);
+                x = randomNumber(1000, 10000);
             } while (!checkIfPrime(x));
             return x;
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za generowanie liczby z podanego zakresu
+        /// </summary>
+        /// <param name="min">Wartość minimalna zmiennej</param>
+        /// <param name="max">Wartośc maksymalna zmiennej</param>
+        /// <returns></returns>
         public static BigInteger randomNumber(int min, int max)
         {
             _rnx = new Random();
             return _rnx.Next(min, max);
         }
 
+        /// <summary>
+        /// Metoda sprawdzająca czy podana liczba jest pierwsza
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static bool checkIfPrime(BigInteger n)
         {
             var isPrime = true;
@@ -34,6 +49,14 @@ namespace RSACalculate
             return isPrime;
         }
 
+
+        /// <summary>
+        /// Metoda odpowiedzialna za generowanie liczby n oraz phi według wzoru
+        /// </summary>
+        /// <param name="type">Typ generowanej liczby</param>
+        /// <param name="p">Wartość zmiennej p</param>
+        /// <param name="q">Wartość zmiennej q</param>
+        /// <returns></returns>
         public static BigInteger nAndPhiGenerator(String type, BigInteger p, BigInteger q)
         {
             if (type == "phi") return (p - 1) * (q - 1);
@@ -41,28 +64,45 @@ namespace RSACalculate
             else return -1;
         }
 
+        /// <summary>
+        /// Metoda odpowiedzialna za generowanie liczby e wedlug wzoru
+        /// </summary>
+        /// <param name="phi">Wartość liczby phi</param>
+        /// <returns></returns>
         public static BigInteger eGenerator(BigInteger phi)
         {
             BigInteger e = 0;
             do
             {
-                e = generatePrime(10);
+                e = generatePrime(100);
             } while (!isPrime(e) && !(BigInteger.GreatestCommonDivisor(e, phi) == 1));
             return e;
         }
 
+
+        /// <summary>
+        /// Metoda odpowiedzialna za generowanie liczby d według wzoru
+        /// </summary>
+        /// <param name="e">Wartość zmiennej e</param>
+        /// <param name="phi">Wartość zmiennej phi</param>
+        /// <returns></returns>
         public static BigInteger dGenerator(BigInteger e, BigInteger phi)
         {
-            for(var i=0; i<phi*2; i++)
+            for(var i=0; i<phi*3; i++)
             {
                 if ((e * i - 1) % phi == 0)
                 {
                     return i;
                 }
             }
-            return -1;
+            throw new ArithmeticException();
         }
 
+        /// <summary>
+        /// Metoda sprawdzająca czy podana liczba jest względnie pierwsza
+        /// </summary>
+        /// <param name="n">Podana liczba pierwsza</param>
+        /// <returns></returns>
         public static bool isPrime(BigInteger n)
         {
             var sqrt = Math.Sqrt((int)n);
@@ -77,6 +117,11 @@ namespace RSACalculate
             return true;
         }
 
+        /// <summary>
+        /// Metoda generująca liczbę pierwszą o podanej minimalnej wartości
+        /// </summary>
+        /// <param name="min">Minimalna wartość liczby pierwszej</param>
+        /// <returns></returns>
         public static BigInteger generatePrime(BigInteger min)
         {
             BigInteger primeNumber = 0;
