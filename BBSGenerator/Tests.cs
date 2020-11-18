@@ -91,7 +91,7 @@ namespace BBSGenerator
                 Console.WriteLine("[Long Series Test] Zakonczono sukcesem!");
         }
 
-        public static void LSTest(List<int> input)
+        public static void LongSTest(List<int> input)
         {
             int count = 0;
             int biggestSeries = 0;
@@ -128,6 +128,46 @@ namespace BBSGenerator
             else
                 Console.WriteLine($"[Long Series Test] Nie spelniono warunku testu!");
         }
+
+        public static void LSTest(List<int> input)
+        {
+            int countTrue = 0, countFalse = 0;
+            for (int i = 0; i < input.Count; i++)
+            {
+                //Dla jedynek
+                if (input[i] == 1)
+                    countTrue++;
+                else
+                {
+                    if (countTrue >= 26)
+                        break;
+                    else
+                        countTrue = 0;
+                }
+
+                // Dla zer
+                if (input[i] == 0)
+                    countFalse++;
+                else
+                {
+                    if (countFalse >= 26)
+                        break;
+                    else
+                        countFalse = 0;
+                }
+
+            }
+
+            if (countTrue < 26 && countFalse < 26)
+            {
+                Console.WriteLine("[Long Series Test] Zakonczono sukcesem!");
+            }
+            else if (countTrue >= 26)
+                Console.WriteLine("[Long Series Test] Nie spelniono warunku testu!");
+            else if (countFalse >= 26)
+                Console.WriteLine("[Long Series Test] Nie spelniono warunku testu!");
+        }
+
 
         //SERIES TEST
         public static void SeriesTest(List<int> list)
@@ -269,7 +309,7 @@ namespace BBSGenerator
             if (result > 2.16 && result < 46.17)
                 Console.WriteLine($"[Poker Test] Zakonczono sukcesem! [2,16 < {result} < 46,17]");
             else
-                Console.WriteLine($"[Poker Test] ]Nie spelniono wymagan testu! [ {result} ]");
+                Console.WriteLine($"[Poker Test] Nie spelniono warunku testu! [ {result} ]");
         }
     }
 }

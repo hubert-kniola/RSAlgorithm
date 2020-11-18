@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj": {}
+    "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj": {
+    "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj",
         "projectName": "BBSGenerator",
-        "projectPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj",
-        "packagesPath": "C:\\Users\\hubkn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hubkn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,17 +56,17 @@
         }
       }
     },
-    "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj": {
+    "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj",
         "projectName": "RSACalculate",
-        "projectPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj",
-        "packagesPath": "C:\\Users\\hubkn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSACalculate\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSACalculate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hubkn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj": {
-                "projectPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj"
+              "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj"
               }
             }
           }
@@ -112,17 +112,17 @@
         }
       }
     },
-    "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj": {
+    "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj",
         "projectName": "RSAlgorithm",
-        "projectPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj",
-        "packagesPath": "C:\\Users\\hubkn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSAlgorithm\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSAlgorithm\\RSAlgorithm.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSAlgorithm\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hubkn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -135,11 +135,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj": {
-                "projectPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj"
+              "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\BBSGenerator\\BBSGenerator.csproj"
               },
-              "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj": {
-                "projectPath": "C:\\Users\\hubkn\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj"
+              "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj": {
+                "projectPath": "C:\\Users\\Dell\\Desktop\\RSAlgorithm\\RSACalculate\\RSACalculate.csproj"
               }
             }
           }

@@ -10,3 +10,15 @@ C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalcu
 C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\BBSGenerator.dll
 C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\BBSGenerator.pdb
 C:\Users\hubkn\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csproj.CopyComplete
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\RSACalculate.deps.json
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\RSACalculate.dll
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\RSACalculate.pdb
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\BBSGenerator.dll
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\bin\Debug\netcoreapp3.1\BBSGenerator.pdb
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.AssemblyInfo.cs
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.csproj.CopyComplete
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.dll
+C:\Users\Dell\Desktop\RSAlgorithm\RSACalculate\obj\Debug\netcoreapp3.1\RSACalculate.pdb

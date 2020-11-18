@@ -7,3 +7,12 @@ C:\Users\hubkn\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGener
 C:\Users\hubkn\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.csproj.CoreCompileInputs.cache
 C:\Users\hubkn\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.dll
 C:\Users\hubkn\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.pdb
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.csprojAssemblyReference.cache
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.AssemblyInfo.cs
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.dll
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\obj\Debug\netcoreapp3.1\BBSGenerator.pdb
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\bin\Debug\netcoreapp3.1\BBSGenerator.deps.json
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\bin\Debug\netcoreapp3.1\BBSGenerator.dll
+C:\Users\Dell\Desktop\RSAlgorithm\BBSGenerator\bin\Debug\netcoreapp3.1\BBSGenerator.pdb
