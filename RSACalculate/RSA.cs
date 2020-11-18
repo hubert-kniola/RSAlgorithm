@@ -12,7 +12,8 @@ namespace RSACalculate
         public static void RSAalgorithm()
         {
             #region Generating
-            var plainText = RSACrypto.generateMessage(50);  
+            //var plainText = RSACrypto.generateMessage(50);  
+            var plainText = "Hello, how are you? What are you doing today? Bayo";  
             Console.WriteLine($"PlainText: {plainText} | Length: {plainText.Length}");
 
             Stopwatch sw = Stopwatch.StartNew();
