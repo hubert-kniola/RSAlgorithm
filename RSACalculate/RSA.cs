@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Numerics;
 using System.Text;
 using System.Threading;
 
@@ -41,7 +43,16 @@ namespace RSACalculate
             Console.WriteLine($"Public key: {e} | Generation time [ms]: {sw.Elapsed}");
 
             sw.Start();
-            var d = RSACalculations.dGenerator(e, phi);
+            BigInteger d = 0;
+            try
+            {
+                d = RSACalculations.dGenerator(e, phi);
+            }
+            catch(ArithmeticException err)
+            {
+                TextWriter errorWriter = Console.Error;
+                errorWriter.WriteLine(err.Message);
+            }
             sw.Stop();
             Console.WriteLine($"Private key: {d} | Generation time [ms]: {sw.Elapsed}");
             #endregion

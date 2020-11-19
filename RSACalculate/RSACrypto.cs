@@ -78,10 +78,9 @@ namespace RSACalculate
         public static List<BigInteger> encryptMessage(string msg, BigInteger e, BigInteger n)
         {
             Console.WriteLine("=== ENCRYPTION ===");
-            IEnumerable<string> listOfString = new List<string>();
+            //IEnumerable<string> listOfString = new List<string>();
             List<int> intList = new List<int>();
             List<BigInteger> encryptList = new List<BigInteger>();
-            List<int> asc = new List<int>();
 
             Console.WriteLine($"{msg} | Length: {msg.Length}");
             byte[] asciiBytes = Encoding.ASCII.GetBytes(msg);
@@ -93,13 +92,13 @@ namespace RSACalculate
             Console.Write($" | Length: {asciiBytes.Length}");
             Console.WriteLine();
 
-            IEnumerable<List<int>> listOfInt = new List<List<int>>();
-            listOfInt = SplitList(intList, (int)e - 1);
+            //IEnumerable<List<int>> listOfInt = new List<List<int>>();
+            //listOfInt = SplitList(intList, (int)e - 1);
 
-            foreach (var element in listOfInt)
+            foreach (var element in intList)
             {
-                foreach (var el in element)
-                    encryptList.Add(BigInteger.Pow(el, (int)e) % n);
+                //foreach (var el in element)
+                encryptList.Add(BigInteger.Pow(element, (int)e) % n);
             }
             for (int i = 0; i < encryptList.Count; i++)
                 Console.WriteLine($"{i} | {encryptList[i]}");
@@ -123,25 +122,20 @@ namespace RSACalculate
             foreach (var element in encryptList)
                 decryptList.Add(BigInteger.ModPow(element, (int)d, n));
 
+            //IEnumerable<List<BigInteger>> listOfInt = SplitList(decryptList, 2);
+
             foreach (var element in decryptList)
-                Console.Write(element);
-            Console.WriteLine();
+                //foreach (var e in element)
+                Console.WriteLine(element);
 
-            _ = new List<List<BigInteger>>();
-            IEnumerable<List<BigInteger>> listOfInt = SplitList(decryptList, 2);
-
-            foreach (var element in listOfInt)
-                foreach (var e in element)
-                    Console.WriteLine(e);
-
-            foreach (var element in listOfInt)
+            foreach (var element in decryptList)
             {
-                foreach (var e in element)
-                {
-                    char r = (char)e;
-                    Console.Write(r);
-                    charList.Add(r);
-                }
+                //foreach (var e in element)
+                //{
+                char r = (char)element;
+                Console.Write(r);
+                charList.Add(r);
+                //}
             }
             Console.Write($" | Length: {charList.Count}");
             Console.WriteLine();
